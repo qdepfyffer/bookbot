@@ -9,7 +9,7 @@ def get_book_text(filepath: str) -> str:
     with open(filepath) as f:
         return f.read()
 
-def pretty_print(elements: list) -> None:
+def pretty_print(elements: list[dict]) -> None:
     for element in elements:
         if element["char"].isalpha():
             print(f"{element["char"]}: {element["num"]}")
